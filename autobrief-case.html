@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:#08090C;color:#F4F5F7;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#6C7BFF;color:#fff;}
+  @keyframes revUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-26px)}}
+  [data-rev]{animation:revUp .7s cubic-bezier(.2,.7,.2,1) both;}
+  .lk{transition:opacity .18s;}
+  .lk:hover{opacity:.62;}
+  .gcard{transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s,background .25s;}
+  .gcard:hover{transform:translateY(-4px);border-color:rgba(108,123,255,0.42)!important;}
+  .imgwrap img{display:block;width:100%;}
+  .pill{transition:transform .18s,box-shadow .25s;}
+  .pill:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(108,123,255,.6);}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<div style="position:relative;min-height:100vh;background:#08090C;color:#F4F5F7;font-family:'Hanken Grotesk',system-ui,sans-serif;overflow:hidden;">
+
+  <div style="position:absolute;top:-160px;left:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.34),transparent 66%);filter:blur(40px);pointer-events:none;animation:floatB 14s ease-in-out infinite;"></div>
+  <div style="position:absolute;top:900px;right:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(60,224,200,0.16),transparent 66%);filter:blur(44px);pointer-events:none;animation:floatB 18s ease-in-out infinite reverse;"></div>
+  <div style="position:absolute;top:2100px;left:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.22),transparent 66%);filter:blur(44px);pointer-events:none;"></div>
+
+  <div style="position:relative;z-index:2;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:80;background:rgba(10,11,15,0.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:1080px;margin:0 auto;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <a href="index.html" class="lk" style="display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:#F4F5F7;font-weight:600;font-size:14.5px;">
+        <span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:inline-flex;align-items:center;justify-content:center;">←</span>
+        Все работы
+      </a>
+      <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;letter-spacing:-0.01em;">AutoBrief</span>
+      <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:8px;background:#6C7BFF;color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:30px;cursor:pointer;text-decoration:none;">@alinO43</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="max-width:1080px;margin:0 auto;padding:62px 28px 0;">
+    <div data-rev style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+      <span style="background:rgba(108,123,255,0.16);border:1px solid rgba(108,123,255,0.4);color:#9FA9FF;font-size:13px;font-weight:600;padding:7px 14px;border-radius:24px;">UX/UI</span>
+      <span class="tag-light-xs">Product</span>
+      <span class="tag-light-xs">Manager</span>
+    </div>
+    <div style="max-width:920px;">
+      <h1 data-rev style="font-family:'Archivo',sans-serif;font-weight:900;font-size:60px;line-height:0.96;letter-spacing:-0.04em;margin:0;">Сервис автоматического конспектирования встреч <span style="color:#6C7BFF;text-shadow:0 0 36px rgba(108,123,255,0.5);">AutoBrief</span></h1>
+      <p data-rev style="font-size:20px;line-height:1.5;color:#A7A9B2;margin:24px 0 0;">Спроектировала B2B-продукт, который превращает записи встреч в структурированную информацию: расшифровка, ключевые тезисы и задачи — без ручного конспектирования.</p>
+    </div>
+
+    <div data-rev class="imgwrap" style="margin-top:38px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:26px;padding:14px;backdrop-filter:blur(18px);">
+      <img src="screens/ab/figma-473/hero-cover.png" alt="Обложка кейса AutoBrief" style="border-radius:16px;">
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;">
+      <div class="card-glass-18">
+        <div class="label-uppercase">Контекст</div>
+        <div class="h4-lg">Стартап</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Год</div>
+        <div class="h4-lg">2025–2026</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Роль</div>
+        <div class="h4-lg">Product дизайнер</div>
+      </div>
+      <a href="https://autobrief.ru/" target="_blank" class="gcard" style="text-decoration:none;color:inherit;background:rgba(108,123,255,0.12);border:1px solid rgba(108,123,255,0.32);backdrop-filter:blur(16px);border-radius:18px;padding:18px 20px;display:block;">
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9FA9FF;font-weight:700;">Продукт</div>
+        <div class="h4-lg">autobrief.ru ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Моя роль -->
+  <div style="max-width:1080px;margin:0 auto;padding:48px 28px 0;">
+    <div style="background:linear-gradient(150deg,rgba(108,123,255,0.16),rgba(108,123,255,0.04));border:1px solid rgba(108,123,255,0.32);backdrop-filter:blur(16px);border-radius:22px;padding:28px 30px;">
+      <div style="max-width:780px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;color:#9FA9FF;margin-bottom:14px;">Моя роль и вклад</div>
+        <p style="font-size:15.5px;line-height:1.6;color:#D6D8DE;margin:0 0 16px;">Вела продукт от исследования до финальных экранов: проанализировала аналоги, сформулировала и проверила гипотезы, спроектировала сценарии работы со встречами и собрала интерфейс с фокусом на простоту и скорость. Совмещала роли дизайнера и менеджера задачи.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="tag-light-sm">Конкурентный анализ</span>
+          <span class="tag-light-sm">Гипотезы</span>
+          <span class="tag-light-sm">Сценарии и флоу</span>
+          <span class="tag-light-sm">UI и дизайн-система</span>
+          <span class="tag-light-sm">Прототипирование</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 01 ЗАДАЧА -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <h2 class="h2-xl">Задача</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:16px;">
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Контекст</div>
+        <p class="text-body-sm">AutoBrief — B2B-сервис для автоматического конспектирования встреч: распознаёт речь, превращает её в текст и помогает структурировать информацию.</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Задача</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div class="flex-gap-10"><span class="color-accent">—</span>автоматически расшифровывать встречи</div>
+          <div class="flex-gap-10"><span class="color-accent">—</span>выделять ключевые тезисы</div>
+          <div class="flex-gap-10"><span class="color-accent">—</span>формировать заметки и to-do</div>
+          <div class="flex-gap-10"><span class="color-accent">—</span>упрощать поиск информации по встречам</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- этапы -->
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:18px;padding:20px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;color:rgba(108,123,255,0.5);margin-bottom:8px;">1</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:5px;">Анализ</div>
+        <p style="font-size:13px;line-height:1.45;color:#A7A9B2;margin:0;">Сложный поиск, слабая структура, перегруженность.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:18px;padding:20px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;color:rgba(108,123,255,0.5);margin-bottom:8px;">2</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:5px;">Гипотезы</div>
+        <p style="font-size:13px;line-height:1.45;color:#A7A9B2;margin:0;">Проекты, поиск по содержанию, AI.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:18px;padding:20px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;color:rgba(108,123,255,0.5);margin-bottom:8px;">3</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:5px;">Сценарии</div>
+        <p style="font-size:13px;line-height:1.45;color:#A7A9B2;margin:0;">Флоу работы со встречами и информацией.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:18px;padding:20px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;color:rgba(108,123,255,0.5);margin-bottom:8px;">4</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:5px;">Тестирование</div>
+        <p style="font-size:13px;line-height:1.45;color:#A7A9B2;margin:0;">Проверка на прототипе, упрощение навигации.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:18px;padding:20px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;color:rgba(108,123,255,0.5);margin-bottom:8px;">5</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:5px;">Решение</div>
+        <p style="font-size:13px;line-height:1.45;color:#A7A9B2;margin:0;">Интерфейс с фокусом на простоту и скорость.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 РАЗБОР ТЗ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <h2 class="h2-xl">Разбор задачи</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div class="gcard card-glass-26">
+        <span style="display:flex;width:52px;height:52px;border-radius:14px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px;"><img src="screens/ab/figma-473/icon-user-circle.svg" alt="" class="icon-sm"></span>
+        <div class="h4-md">Миссия пользователя</div>
+        <p class="text-body-lg">Быстро превращать встречи в структурированную информацию: находить ключевые моменты, фиксировать выводы и задачи без ручного конспектирования.</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <span style="display:flex;width:52px;height:52px;border-radius:14px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px;"><img src="screens/ab/figma-473/icon-currency-btc.svg" alt="" class="icon-sm"></span>
+        <div class="h4-md">Цели бизнеса</div>
+        <p class="text-body-lg">Упростить работу с большим количеством встреч, сократить время на обработку и стимулировать регулярное использование за счёт AI-функций.</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <span style="display:flex;width:52px;height:52px;border-radius:14px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px;"><img src="screens/ab/figma-473/icon-users-three.svg" alt="" class="icon-sm"></span>
+        <div class="h4-md">Целевая аудитория</div>
+        <p class="text-body-lg">Product / Project менеджеры, sales, основатели и руководители, работающие над несколькими проектами и встречами.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 БЕНЧМАРКИНГ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+      <h2 class="h2-xl">Бенчмаркинг</h2>
+    </div>
+    <div style="max-width:700px;margin:0 0 26px;">
+      <p style="font-size:16.5px;line-height:1.6;color:#A7A9B2;margin:0;">Проанализировала зарубежные аналоги — Descript, ScreenApp и Monica — по работе с записями, структуре хранения, поиску, AI-функциям и сложности интерфейса.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:22px;">
+        <div class="imgwrap" style="border-radius:12px;overflow:hidden;background:rgba(0,0,0,0.2);margin-bottom:14px;"><img src="screens/ab/figma-473/bench-descript-shot.png" alt="Descript" style="aspect-ratio:16/10;object-fit:cover;"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;margin-bottom:10px;">Descript</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:#B6B8C0;line-height:1.4;">
+          <span class="color-accent-cyan">+ глубокая работа с расшифровкой, мощный AI</span>
+          <span style="color:#FF9C9C;">− перегружен, высокий порог входа</span>
+        </div>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:22px;">
+        <div class="imgwrap" style="border-radius:12px;overflow:hidden;background:rgba(0,0,0,0.2);margin-bottom:14px;"><img src="screens/ab/figma-473/bench-screenapp-shot.png" alt="ScreenApp" style="aspect-ratio:16/10;object-fit:cover;"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;margin-bottom:10px;">ScreenApp</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:#B6B8C0;line-height:1.4;">
+          <span class="color-accent-cyan">+ простая запись и структура</span>
+          <span style="color:#FF9C9C;">− слабая AI-логика, нет командного уровня</span>
+        </div>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:22px;">
+        <div class="imgwrap" style="border-radius:12px;overflow:hidden;background:rgba(0,0,0,0.2);margin-bottom:14px;"><img src="screens/ab/figma-473/bench-monica-shot.png" alt="Monica" style="aspect-ratio:16/10;object-fit:cover;"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;margin-bottom:10px;">Monica</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:#B6B8C0;line-height:1.4;">
+          <span class="color-accent-cyan">+ быстрый доступ к AI, простота</span>
+          <span style="color:#FF9C9C;">− нет контекста проектов и встреч</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
+      <div style="background:linear-gradient(150deg,rgba(108,123,255,0.18),rgba(108,123,255,0.05));border:1px solid rgba(108,123,255,0.35);backdrop-filter:blur(16px);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:14px;">
+        <span style="width:52px;height:52px;border-radius:14px;background:rgba(108,123,255,0.2);border:1px solid rgba(108,123,255,0.4);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="screens/ab/figma-473/icon-fixer.svg" alt="" class="icon-sm"></span>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#9FA9FF;">Сводные выводы</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:#D6D8DE;line-height:1.4;">
+          <span>Рынок не закрывает полный сценарий</span>
+          <span>Основная проблема — пост-обработка встреч</span>
+          <span>Слабая структура данных</span>
+          <span>AI не встроен в основной сценарий</span>
+        </div>
+      </div>
+      <div class="gcard card-glass-26">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#9FA9FF;margin-bottom:12px;">Инсайты</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;color:#C2C4CC;line-height:1.45;">
+          <div style="display:flex;gap:9px;"><span class="color-accent">01</span>Важно быстро находить информацию, а не просто записывать</div>
+          <div style="display:flex;gap:9px;"><span class="color-accent">02</span>AI должен быть частью основного сценария</div>
+          <div style="display:flex;gap:9px;"><span class="color-accent">03</span>Простая структура данных критична для B2B</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 ГИПОТЕЗЫ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <h2 class="h2-xl">Гипотезы</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:24px;display:flex;gap:16px;">
+        <span style="flex:none;width:48px;height:48px;border-radius:13px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="screens/ab/figma-473/icon-chats.svg" alt="" style="width:26px;height:26px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;margin-bottom:6px;">Комментарии внутри встречи</div><p class="text-body-md">Комментарии в таймлайне помогут быстрее возвращаться к контексту и фиксировать договорённости.</p></div>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:24px;display:flex;gap:16px;">
+        <span style="flex:none;width:48px;height:48px;border-radius:13px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="screens/ab/figma-473/icon-star-four.svg" alt="" style="width:26px;height:26px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;margin-bottom:6px;">AI как часть сценария</div><p class="text-body-md">Встроенный AI (саммари, тезисы) сократит время обработки информации.</p></div>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:24px;display:flex;gap:16px;">
+        <span style="flex:none;width:48px;height:48px;border-radius:13px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="screens/ab/figma-473/icon-folders.svg" alt="" style="width:26px;height:26px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;margin-bottom:6px;">Проекты и доступы</div><p class="text-body-md">Встречи в проектах и настройка доступов упростят навигацию и командную работу.</p></div>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:24px;display:flex;gap:16px;">
+        <span style="flex:none;width:48px;height:48px;border-radius:13px;background:rgba(108,123,255,0.14);border:1px solid rgba(108,123,255,0.36);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="screens/ab/figma-473/icon-magnifying-glass.svg" alt="" style="width:26px;height:26px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;margin-bottom:6px;">Поиск по содержанию</div><p class="text-body-md">Поиск по расшифровке поможет быстрее находить нужное внутри диалогов.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 ПРОВЕРКА -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <h2 class="h2-xl">Проверка гипотез</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:0.8fr 0.8fr 1.4fr;gap:16px;">
+      <div class="gcard card-glass-24">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#9FA9FF;margin-bottom:12px;">Метрики</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:#C2C4CC;line-height:1.4;">
+          <span>Time to insight — время поиска</span>
+          <span>Task Success Rate — успешность задачи</span>
+          <span>AI adoption — использование AI</span>
+        </div>
+      </div>
+      <div class="gcard card-glass-24">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#9FA9FF;margin-bottom:12px;">Как проверялось</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#C2C4CC;margin:0;">Пользователи выполняли сценарии поиска информации и работы со встречей на интерактивном прототипе.</p>
+      </div>
+      <div class="gcard card-glass-24">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#9FA9FF;margin-bottom:12px;">Наблюдения</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div class="flex-gap-9"><span class="color-accent-cyan">●</span>поиск по содержанию → быстрее находят информацию</div>
+          <div class="flex-gap-9"><span class="color-accent-cyan">●</span>AI используется как основной инструмент обработки</div>
+          <div class="flex-gap-9"><span class="color-accent-cyan">●</span>структура через проекты упрощает навигацию</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 РЕАЛИЗАЦИЯ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+      <h2 class="h2-xl">Реализация</h2>
+    </div>
+    <p style="font-size:16.5px;line-height:1.6;color:#A7A9B2;max-width:700px;margin:0 0 28px;">Цветовая система построена на нейтральной тёмной базе с акцентным синим — чтобы снизить визуальную нагрузку и выделить ключевые действия.</p>
+    <div style="display:flex;flex-direction:column;gap:34px;">
+      <div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-bottom:12px;color:#EDEEF2;">Главный экран</div>
+        <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);"><img src="screens/ab/realiz/glavnaya.png" alt="Главный экран" class="img-rounded-14"></div>
+      </div>
+      <div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-0.03em;margin:0 0 18px;">Сценарии</h2>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-bottom:6px;color:#EDEEF2;">Создание и обработка встречи</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Загрузка или запись встречи в видео, аудио или текстовом формате. После обработки — расшифровка, ключевые тезисы и задачи без ручного конспектирования.</p>
+        <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);"><img src="screens/ab/realiz/section31.png" alt="Основной сценарий" class="img-rounded-14"></div>
+      </div>
+      <div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-bottom:6px;color:#EDEEF2;">Поиск с помощью AI</div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Краткое содержание, ключевые моменты и ответы на вопросы по встрече. AI — часть основного сценария, а не отдельная функция.</p>
+        <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);"><img src="screens/ab/realiz/ai.png" alt="Поиск с AI" class="img-rounded-14"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;color:#EDEEF2;">Проекты</div>
+          <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:20px;padding:12px;backdrop-filter:blur(16px);"><img src="screens/ab/realiz/project.png" alt="Проекты" style="border-radius:12px;"></div>
+        </div>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;color:#EDEEF2;">Доступы и экспорт</div>
+          <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:20px;padding:12px;backdrop-filter:blur(16px);"><img src="screens/ab/realiz/nastroyka.png" alt="Настройки встречи" style="border-radius:12px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 ГАЛЕРЕЯ ЭКРАНОВ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+      <h2 class="h2-xl">Галерея экранов</h2>
+    </div>
+    <p style="font-size:16.5px;line-height:1.6;color:#A7A9B2;max-width:700px;margin:0 0 24px;">Весь набор интерфейсов проекта. Переключай между десктоп- и мобильной версией.</p>
+
+    <!-- TOGGLE -->
+    <div style="display:inline-flex;gap:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(16px);border-radius:30px;padding:5px;margin-bottom:30px;">
+      <button id="btn-web" onclick="setGallery('web')" style="display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:14.5px;padding:10px 22px;border-radius:24px;transition:all .22s;background:#6C7BFF;color:#ffffff;">
+        <span style="font-size:16px;">🖥</span> Веб-версия
+      </button>
+      <button id="btn-mobile" onclick="setGallery('mobile')" style="display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:14.5px;padding:10px 22px;border-radius:24px;transition:all .22s;background:transparent;color:#A7A9B2;">
+        <span style="font-size:16px;">📱</span> Мобильная версия
+      </button>
+    </div>
+
+    <!-- WEB GALLERY -->
+    <div id="gallery-web" style="column-count:2;column-gap:16px;">
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/meeting-summary.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/meeting-ai-chat.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/meeting-video-todo.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/share-modal.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/add-meeting.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/edit-todo.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/project-participants.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/project-integrations.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/project-settings.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/projects-list.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/company-users.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/company-roles.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/company-users-2.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/company-roles-2.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/export-jira.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/export-todo.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/settings-profile.png" class="img-cover"></div></div>
+      <div class="gallery-item-16"><div class="badge-medium"><img src="screens/ab/help-center.png" class="img-cover"></div></div>
+    </div>
+
+    <!-- MOBILE GALLERY (masonry · 3 cols) -->
+    <div id="gallery-mobile" style="display:none;column-count:3;column-gap:14px;">
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m01.png" alt="Мобильный экран 1" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m02.png" alt="Мобильный экран 2" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m03.png" alt="Мобильный экран 3" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m04.png" alt="Мобильный экран 4" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m05.png" alt="Мобильный экран 5" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m06.png" alt="Мобильный экран 6" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m07.png" alt="Мобильный экран 7" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m08.png" alt="Мобильный экран 8" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m09.png" alt="Мобильный экран 9" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m10.png" alt="Мобильный экран 10" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m11.png" alt="Мобильный экран 11" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m12.png" alt="Мобильный экран 12" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m13.png" alt="Мобильный экран 13" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m14.png" alt="Мобильный экран 14" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m15.png" alt="Мобильный экран 15" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m16.png" alt="Мобильный экран 16" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m17.png" alt="Мобильный экран 17" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m18.png" alt="Мобильный экран 18" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m19.png" alt="Мобильный экран 19" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m20.png" alt="Мобильный экран 20" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m21.png" alt="Мобильный экран 21" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m22.png" alt="Мобильный экран 22" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m23.png" alt="Мобильный экран 23" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m24.png" alt="Мобильный экран 24" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m25.png" alt="Мобильный экран 25" class="img-rounded-11"></div></div>
+      <div class="gallery-item-14"><div class="imgwrap" class="badge-small"><img src="screens/ab/m/m26.png" alt="Мобильный экран 26" class="img-rounded-11"></div></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="max-width:1080px;margin:84px auto 0;padding:0 28px 80px;">
+    <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(24px);border-radius:28px;padding:54px 40px;text-align:center;">
+      <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:460px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.4),transparent 66%);filter:blur(30px);pointer-events:none;"></div>
+      <div style="position:relative;">
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;line-height:1;letter-spacing:-0.03em;margin:0 0 22px;">Спасибо, что досмотрели кейс</h2>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="index.html" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:#6C7BFF;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;cursor:pointer;text-decoration:none;">← Все работы</a>
+          <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);color:#F4F5F7;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;cursor:pointer;text-decoration:none;">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<script>
+function setGallery(mode) {
+  var web = document.getElementById('gallery-web');
+  var mobile = document.getElementById('gallery-mobile');
+  var btnWeb = document.getElementById('btn-web');
+  var btnMobile = document.getElementById('btn-mobile');
+  if (mode === 'web') {
+    web.style.display = 'block';
+    mobile.style.display = 'none';
+    btnWeb.style.background = '#6C7BFF';
+    btnWeb.style.color = '#ffffff';
+    btnMobile.style.background = 'transparent';
+    btnMobile.style.color = '#A7A9B2';
+  } else {
+    web.style.display = 'none';
+    mobile.style.display = 'block';
+    btnWeb.style.background = 'transparent';
+    btnWeb.style.color = '#A7A9B2';
+    btnMobile.style.background = '#6C7BFF';
+    btnMobile.style.color = '#ffffff';
+  }
+}
+</script>
+</body>
+</html>

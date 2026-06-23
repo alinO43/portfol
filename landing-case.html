@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Analytics — Кейс · Алина Тотоева</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:#08090C;color:#F4F5F7;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#6C7BFF;color:#fff;}
+  @keyframes revUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-26px)}}
+  [data-rev]{animation:revUp .7s cubic-bezier(.2,.7,.2,1) both;}
+  .lk{transition:opacity .18s;}
+  .lk:hover{opacity:.62;}
+  .gcard{transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s,background .25s;}
+  .gcard:hover{transform:translateY(-4px);border-color:rgba(108,123,255,0.42)!important;}
+  .imgwrap img{display:block;width:100%;}
+  .pill{transition:transform .18s,box-shadow .25s;}
+  .pill:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(108,123,255,.6);}
+  a{text-decoration:none;color:inherit;}
+</style>
+</head>
+<body>
+
+<div style="position:relative;min-height:100vh;background:#08090C;color:#F4F5F7;font-family:'Hanken Grotesk',system-ui,sans-serif;overflow:hidden;">
+
+  <div style="position:absolute;top:-160px;left:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.34),transparent 66%);filter:blur(40px);pointer-events:none;animation:floatB 14s ease-in-out infinite;"></div>
+  <div style="position:absolute;top:1100px;right:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(60,224,200,0.16),transparent 66%);filter:blur(44px);pointer-events:none;animation:floatB 18s ease-in-out infinite reverse;"></div>
+
+  <div style="position:relative;z-index:2;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:80;background:rgba(10,11,15,0.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:1080px;margin:0 auto;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <a href="index.html" class="lk" style="display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:14.5px;">
+        <span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:inline-flex;align-items:center;justify-content:center;">←</span>
+        Все работы
+      </a>
+      <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;letter-spacing:-0.01em;">Find Analytics</span>
+      <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:8px;background:#6C7BFF;color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:30px;">@alinO43</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="max-width:1080px;margin:0 auto;padding:62px 28px 0;">
+    <div data-rev style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+      <span style="background:rgba(108,123,255,0.16);border:1px solid rgba(108,123,255,0.4);color:#9FA9FF;font-size:13px;font-weight:600;padding:7px 14px;border-radius:24px;">Landing</span>
+      <span class="tag-light-xs">Бренд</span>
+      <span class="tag-light-xs">Web</span>
+      <span class="tag-light-xs">Маркетинг</span>
+    </div>
+    <h1 data-rev style="font-family:'Archivo',sans-serif;font-weight:900;font-size:62px;line-height:0.96;letter-spacing:-0.04em;margin:0;max-width:900px;">Лэндинг сервиса защиты данных <span style="color:#6C7BFF;text-shadow:0 0 36px rgba(108,123,255,0.5);">Find Analytics</span></h1>
+    <p data-rev style="font-size:20px;line-height:1.5;color:#A7A9B2;max-width:640px;margin:24px 0 0;">Разработала лэндинг для сервиса проверки и сбора данных для судебной защиты персональных данных — с понятной структурой и крупной типографикой для конверсии.</p>
+
+    <div data-rev class="imgwrap" style="margin-top:38px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:26px;padding:14px;backdrop-filter:blur(18px);">
+      <img src="screens/landing/hero-cover.png" alt="Обложка лэндинга Find Analytics" style="border-radius:16px;">
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;">
+      <div class="card-glass-18">
+        <div class="label-uppercase">Тип</div>
+        <div class="h4-lg">Лэндинг</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Год</div>
+        <div class="h4-lg">2025</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Роль</div>
+        <div class="h4-lg">UX/UI дизайнер</div>
+      </div>
+      <a href="https://find-landing-zeta.vercel.app/" target="_blank" class="gcard" style="background:rgba(108,123,255,0.12);border:1px solid rgba(108,123,255,0.32);backdrop-filter:blur(16px);border-radius:18px;padding:18px 20px;display:block;">
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9FA9FF;font-weight:700;">Продукт</div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;margin-top:6px;">Открыть сайт ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ЗАДАЧА -->
+  <div class="container-md">
+    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:16px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:30px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;color:#9FA9FF;margin-bottom:12px;">Задача</div>
+        <p style="font-size:16px;line-height:1.6;color:#C2C4CC;margin:0;">Разработать лэндинг для сервиса по проверке мошенников и сбору данных для судебной защиты персональных данных. Донести ценность сервиса и привести пользователя к целевому действию.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:30px;">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;color:#9FA9FF;margin-bottom:12px;">Подход</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:10px;font-size:15.5px;color:#C2C4CC;"><span class="color-accent">—</span>чёткое бренд-направление и крупная типографика</div>
+          <div style="display:flex;gap:10px;font-size:15.5px;color:#C2C4CC;"><span class="color-accent">—</span>понятная структура: проблема → решение → доверие → CTA</div>
+          <div style="display:flex;gap:10px;font-size:15.5px;color:#C2C4CC;"><span class="color-accent">—</span>акцент на доверии и безопасности данных</div>
+          <div style="display:flex;gap:10px;font-size:15.5px;color:#C2C4CC;"><span class="color-accent">—</span>выделенный целевой сценарий конверсии</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ПОЛНЫЙ МАКЕТ -->
+  <div class="container-md">
+    <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-0.03em;margin:0 0 24px;">Полный макет</h2>
+    <div class="imgwrap" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:24px;padding:16px;backdrop-filter:blur(16px);">
+      <img src="screens/landing/full-layout.png" alt="Полный макет лэндинга Find Analytics" style="border-radius:16px;">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="max-width:1080px;margin:84px auto 0;padding:0 28px 80px;">
+    <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(24px);border-radius:28px;padding:54px 40px;text-align:center;">
+      <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:460px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.4),transparent 66%);filter:blur(30px);pointer-events:none;"></div>
+      <div class="relative">
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;line-height:1;letter-spacing:-0.03em;margin:0 0 22px;">Спасибо, что досмотрели кейс</h2>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="index.html" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:#6C7BFF;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;">← Все работы</a>
+          <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);color:#F4F5F7;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>

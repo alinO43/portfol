@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LMS ITAM — Кейс · Алина Тотоева</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:#08090C;color:#F4F5F7;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#6C7BFF;color:#fff;}
+  @keyframes revUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-26px)}}
+  [data-rev]{animation:revUp .7s cubic-bezier(.2,.7,.2,1) both;}
+  .lk{transition:opacity .18s;}
+  .lk:hover{opacity:.62;}
+  .gcard{transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s,background .25s;}
+  .gcard:hover{transform:translateY(-4px);border-color:rgba(108,123,255,0.42)!important;}
+  .imgwrap img{display:block;width:100%;}
+  .pill{transition:transform .18s,box-shadow .25s;}
+  .pill:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(108,123,255,.6);}
+  a{text-decoration:none;color:inherit;}
+</style>
+</head>
+<body>
+<div style="position:relative;min-height:100vh;background:#08090C;color:#F4F5F7;font-family:'Hanken Grotesk',system-ui,sans-serif;overflow:hidden;">
+
+  <div style="position:absolute;top:-160px;left:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.34),transparent 66%);filter:blur(40px);pointer-events:none;animation:floatB 14s ease-in-out infinite;"></div>
+  <div style="position:absolute;top:900px;right:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(60,224,200,0.16),transparent 66%);filter:blur(44px);pointer-events:none;animation:floatB 18s ease-in-out infinite reverse;"></div>
+  <div style="position:absolute;top:2100px;left:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.22),transparent 66%);filter:blur(44px);pointer-events:none;"></div>
+
+  <div style="position:relative;z-index:2;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:80;background:rgba(10,11,15,0.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:1080px;margin:0 auto;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <a href="index.html" class="lk" style="display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:14.5px;color:#F4F5F7;">
+        <span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);display:inline-flex;align-items:center;justify-content:center;">←</span>
+        Все работы
+      </a>
+      <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;letter-spacing:-0.01em;">LMS ITAM</span>
+      <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:8px;background:#6C7BFF;color:#fff;font-weight:700;font-size:14px;padding:9px 16px;border-radius:30px;">@alinO43</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="max-width:1080px;margin:0 auto;padding:62px 28px 0;">
+    <div data-rev style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+      <span style="background:rgba(108,123,255,0.16);border:1px solid rgba(108,123,255,0.4);color:#9FA9FF;font-size:13px;font-weight:600;padding:7px 14px;border-radius:24px;">UX/UI</span>
+      <span class="tag-light-xs">Product</span>
+      <span class="tag-light-xs">UX Research</span>
+      <span class="tag-light-xs">Prompt engineer</span>
+    </div>
+    <h1 data-rev style="font-family:'Archivo',sans-serif;font-weight:900;font-size:58px;line-height:0.98;letter-spacing:-0.04em;margin:0;max-width:940px;">LMS-платформа для студенческих курсов <span style="color:#6C7BFF;text-shadow:0 0 36px rgba(108,123,255,0.5);">ITAM</span></h1>
+    <p data-rev style="font-size:20px;line-height:1.5;color:#A7A9B2;max-width:660px;margin:24px 0 0;">Спроектировала платформу для неофициальных студенческих IT-курсов МИСИС — где можно публиковать материалы, вести занятия и собирать статистику.</p>
+
+    <div data-rev class="imgwrap" style="margin-top:38px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:26px;padding:14px;backdrop-filter:blur(18px);">
+      <img src="screens/itam/hero-cover.png" alt="Обложка проекта LMS" style="border-radius:16px;">
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;">
+      <div class="card-glass-18">
+        <div class="label-uppercase">Заказчик</div>
+        <div class="h4-lg">МИСИС</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Год</div>
+        <div class="h4-lg">2025–2026</div>
+      </div>
+      <div class="card-glass-18">
+        <div class="label-uppercase">Роль</div>
+        <div class="h4-lg">Product дизайнер</div>
+      </div>
+      <a href="https://edu.itatmisis.ru/" target="_blank" class="gcard" style="background:rgba(108,123,255,0.12);border:1px solid rgba(108,123,255,0.32);backdrop-filter:blur(16px);border-radius:18px;padding:18px 20px;display:block;">
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#9FA9FF;font-weight:700;">Продукт</div>
+        <div class="h4-lg">edu.itatmisis.ru ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- МОЯ РОЛЬ -->
+  <div style="max-width:1080px;margin:0 auto;padding:48px 28px 0;">
+    <div style="background:linear-gradient(150deg,rgba(108,123,255,0.16),rgba(108,123,255,0.04));border:1px solid rgba(108,123,255,0.32);backdrop-filter:blur(16px);border-radius:22px;padding:28px 30px;">
+      <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;color:#9FA9FF;margin-bottom:14px;">Моя роль и вклад</div>
+      <p style="font-size:15.5px;line-height:1.6;color:#D6D8DE;margin:0 0 16px;max-width:780px;">Провела исследование специфики студенческих курсов, выстроила user flow под неформальный сценарий, сформулировала и проверила гипотезы на 6 преподавателях и спроектировала все ключевые экраны — от главной до личного кабинета и страницы занятия.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span class="tag-light-sm">UX-исследование</span>
+        <span class="tag-light-sm">User flow</span>
+        <span class="tag-light-sm">Гипотезы</span>
+        <span class="tag-light-sm">Юзабилити-тестирование</span>
+        <span class="tag-light-sm">UI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 01 ЗАДАЧА -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:15px;color:#6C7BFF;letter-spacing:0.05em;">01</span>
+      <h2 class="h2-xl">Задача</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Контекст</div>
+        <p class="text-body-sm">В МИСИС студенты сами проводят IT-курсы для других студентов. Регулируемой платформы для таких курсов пока нет — негде хранить записи и собирать статистику.</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Задача</div>
+        <p class="text-body-sm">Спроектировать LMS-платформу для курсов МИСИС формата «от студентов для студентов».</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Проблема</div>
+        <p class="text-body-sm">Информация хаотично хранится на разных ресурсах, публикация курсов затруднена — это снижает доступность контента и число участников.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
+      <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);"><img src="screens/itam/context-photo-1.jpg" alt="" class="img-cover-aspect-4-3"></div>
+      <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);"><img src="screens/itam/context-photo-2.jpg" alt="" class="img-cover-aspect-4-3"></div>
+    </div>
+  </div>
+
+  <!-- 02 ИССЛЕДОВАНИЕ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:15px;color:#6C7BFF;letter-spacing:0.05em;">02</span>
+      <h2 class="h2-xl">Исследование</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:16px;">
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Целевая аудитория</div>
+        <p style="font-size:15px;line-height:1.6;color:#C2C4CC;margin:0;">Студенты 1–3 курсов: первокурсники чаще учатся, второй и третий курс — чаще преподают.</p>
+      </div>
+      <div class="gcard card-glass-26">
+        <div class="h4-md-accent">Инсайты</div>
+        <p style="font-size:15px;line-height:1.6;color:#C2C4CC;margin:0;">Курсы держатся на инициативе студентов: мотивация преподавателей невысокая, а сложная платформа отпугивает ещё сильнее. Один человек обычно состоит сразу в нескольких курсах с пересекающимися датами.</p>
+      </div>
+    </div>
+    <div style="background:linear-gradient(150deg,rgba(108,123,255,0.18),rgba(108,123,255,0.05));border:1px solid rgba(108,123,255,0.35);backdrop-filter:blur(16px);border-radius:22px;padding:24px 28px;margin-top:16px;display:flex;align-items:center;gap:18px;">
+      <span style="flex:none;width:50px;height:50px;border-radius:14px;background:rgba(108,123,255,0.2);border:1px solid rgba(108,123,255,0.4);display:flex;align-items:center;justify-content:center;font-size:24px;">💡</span>
+      <p style="font-size:17px;line-height:1.5;color:#E4E5EA;margin:0;font-weight:500;">Платформа должна быть максимально простой и не обязывающей.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
+      <div class="gcard card-glass-26">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#FF9C9C;margin-bottom:12px;">Обычные LMS (Moodle, BBE, VK Education)</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;color:#C2C4CC;line-height:1.45;">
+          <div class="flex-row-gap-9"><span style="color:#FF9C9C;">—</span>преподаватели обязаны готовить полный набор материалов</div>
+          <div class="flex-row-gap-9"><span style="color:#FF9C9C;">—</span>курс: лекции, задания, тесты, записи</div>
+          <div class="flex-row-gap-9"><span style="color:#FF9C9C;">—</span>последовательное прохождение всего контента</div>
+        </div>
+      </div>
+      <div class="gcard card-glass-26">
+        <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;color:#7FE9D6;margin-bottom:12px;">Наша платформа</div>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:14.5px;color:#C2C4CC;line-height:1.45;">
+          <div class="flex-row-gap-9"><span class="color-accent-cyan">+</span>материалы публикуются в нужном объёме</div>
+          <div class="flex-row-gap-9"><span class="color-accent-cyan">+</span>не у всех курсов есть лекции и записи</div>
+          <div class="flex-row-gap-9"><span class="color-accent-cyan">+</span>неформальное взаимодействие, организационная функция</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-bottom:12px;color:#EDEEF2;">User Flow</div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);">
+        <img src="screens/itam/user-flow.png" alt="User flow" style="display:block;width:100%;border-radius:14px;">
+      </div>
+      <p style="font-size:15px;line-height:1.55;color:#A7A9B2;max-width:760px;margin:14px 0 0;">Сократила user flow, упростила публикацию и просмотр контента, заложила лёгкость и неформальность общения с учётом специфики сообщества.</p>
+    </div>
+  </div>
+
+  <!-- 03 ГИПОТЕЗЫ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:15px;color:#6C7BFF;letter-spacing:0.05em;">03</span>
+      <h2 class="h2-xl">Гипотезы</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Информация о занятии</div><p class="text-body-md">Плашка о следующем занятии и аудитории + новости клуба.</p></div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Обновления по курсу</div><p class="text-body-md">Блок с последними занятиями и комментариями к заданиям.</p></div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Переключение курсов</div><p class="text-body-md">Дропдаун «мои курсы» в сайдбаре.</p></div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Проверка ДЗ</div><p class="text-body-md">Сдача работы и обратная связь в формате чата.</p></div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Календарь курсов</div><p class="text-body-md">Все курсы с фильтрами: мои курсы, домашки, конкретный курс.</p></div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;"><div style="font-weight:800;font-size:16px;margin-bottom:7px;">Кастомизация</div><p class="text-body-md">Свой цвет у курса каждого клуба для визуального различия.</p></div>
+    </div>
+    <div style="background:linear-gradient(150deg,rgba(60,224,200,0.16),rgba(60,224,200,0.04));border:1px solid rgba(60,224,200,0.32);backdrop-filter:blur(16px);border-radius:20px;padding:22px 26px;margin-top:14px;">
+      <p style="font-size:15.5px;line-height:1.55;color:#D6D8DE;margin:0;">Сделала вайрфрейм и провела качественное тестирование на <strong class="color-accent-cyan">6 преподавателях</strong> курсов по программированию, дизайну, 3D и менеджменту. Выводы применила на финальных экранах.</p>
+    </div>
+  </div>
+
+  <!-- 04 РЕАЛИЗАЦИЯ -->
+  <div class="container-md">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:15px;color:#6C7BFF;letter-spacing:0.05em;">04</span>
+      <h2 class="h2-xl">Реализация</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:34px;">
+
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="background:rgba(60,224,200,0.16);border:1px solid rgba(60,224,200,0.32);color:#7FE9D6;font-size:12px;font-weight:700;padding:5px 11px;border-radius:18px;">✓ Внедрено</span>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;color:#EDEEF2;">Главная страница</div>
+        </div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Календарь всех курсов, ближайшие занятия и новости клубов на одном экране.</p>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);">
+          <img src="screens/itam/screen-main.png" alt="Главная страница" style="display:block;width:100%;border-radius:14px;">
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="background:rgba(60,224,200,0.16);border:1px solid rgba(60,224,200,0.32);color:#7FE9D6;font-size:12px;font-weight:700;padding:5px 11px;border-radius:18px;">✓ Внедрено</span>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;color:#EDEEF2;">Страница курса</div>
+        </div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Переключение между «моими курсами» в сайдбаре, обновления по курсу, время и место занятия.</p>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);">
+          <img src="screens/itam/screen-course.png" alt="Страница курса" style="display:block;width:100%;border-radius:14px;">
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="background:rgba(255,120,120,0.14);border:1px solid rgba(255,120,120,0.3);color:#FF9C9C;font-size:12px;font-weight:700;padding:5px 11px;border-radius:18px;">✕ Отклонено</span>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;color:#EDEEF2;">Кастомизация курсов</div>
+        </div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Сложно в реализации и не нужно преподавателям: интерес к кастомизации быстро угасает — оставили единицы.</p>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);">
+          <img src="screens/itam/screen-course-custom.png" alt="Кастомизация курса" style="display:block;width:100%;border-radius:14px;">
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="background:rgba(255,120,120,0.14);border:1px solid rgba(255,120,120,0.3);color:#FF9C9C;font-size:12px;font-weight:700;padding:5px 11px;border-radius:18px;">✕ Переосмыслено</span>
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;color:#EDEEF2;">Домашние задания</div>
+        </div>
+        <p style="font-size:14.5px;line-height:1.55;color:#A7A9B2;margin:0 0 12px;max-width:720px;">Чат по ДЗ мог вылиться в спам и нагрузку на сервер — заменили на единоразовую отправку ответа.</p>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:14px;backdrop-filter:blur(16px);">
+          <img src="screens/itam/screen-homework.png" alt="Домашние задания" style="display:block;width:100%;border-radius:14px;">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Другие экраны -->
+    <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin:40px 0 16px;color:#EDEEF2;">Другие экраны</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-profile.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">Личный кабинет</div>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-stats.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">Статистика</div>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-about.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">О курсе</div>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-calendar.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">Календарь</div>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-calls.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">Звонки / трансляция</div>
+      </div>
+      <div>
+        <div style="border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
+          <img src="screens/itam/screen-lesson.png" alt="" class="img-cover-aspect-4-3">
+        </div>
+        <div style="font-size:14px;color:#A7A9B2;margin-top:9px;">Страница занятия</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="max-width:1080px;margin:84px auto 0;padding:0 28px 80px;">
+    <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(24px);border-radius:28px;padding:54px 40px;text-align:center;">
+      <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:460px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.4),transparent 66%);filter:blur(30px);pointer-events:none;"></div>
+      <div class="relative">
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;line-height:1;letter-spacing:-0.03em;margin:0 0 22px;">Спасибо, что досмотрели кейс</h2>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="index.html" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:#6C7BFF;color:#fff;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;">← Все работы</a>
+          <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);color:#F4F5F7;font-weight:700;font-size:16px;padding:14px 28px;border-radius:32px;">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+</body>
+</html>

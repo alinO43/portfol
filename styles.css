@@ -1,0 +1,263 @@
+/* ============================================
+   GALLERY & MASONRY
+   ============================================ */
+
+.gallery-item-14 {
+  break-inside: avoid;
+  margin-bottom: 14px;
+}
+
+.gallery-item-16 {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+.img-rounded-11 {
+  border-radius: 11px;
+}
+
+.img-rounded-14 {
+  border-radius: 14px;
+}
+
+.img-rounded-16 {
+  border-radius: 16px;
+}
+
+.img-rounded-18 {
+  border-radius: 18px;
+}
+
+.img-rounded-20 {
+  border-radius: 20px;
+}
+
+.img-cover {
+  width: 100%;
+  display: block;
+  border-radius: 11px;
+}
+
+.img-cover-aspect-4-3 {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+
+.badge-small {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 8px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.badge-medium {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  padding: 10px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.tag-light-sm {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #E4E5EA;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 22px;
+  display: inline-block;
+}
+
+.tag-light-xs {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #C9CBD2;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 24px;
+  display: inline-block;
+}
+
+.tag-light-xxs {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #C9CBD2;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 22px;
+  display: inline-block;
+}
+
+/* ============================================
+   CONTAINERS & LAYOUT
+   ============================================ */
+
+.container-md {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 84px 28px 0;
+}
+
+.flex-gap-10 {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  color: #C2C4CC;
+}
+
+.flex-gap-9 {
+  display: flex;
+  gap: 9px;
+  font-size: 14.5px;
+  color: #C2C4CC;
+  line-height: 1.45;
+}
+
+/* ============================================
+   CARD STYLES
+   ============================================ */
+
+.card-glass-26 {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 26px;
+}
+
+.card-glass-24 {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.card-glass-18 {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+
+.card-glass-14 {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 14px;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.h2-xl {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.h4-lg {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  margin-top: 6px;
+}
+
+.h4-md {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.h4-md-accent {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: #9FA9FF;
+  margin-bottom: 10px;
+}
+
+.label-uppercase {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7E828B;
+  font-weight: 700;
+}
+
+.text-body-lg {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #B6B8C0;
+  margin: 0;
+}
+
+.text-body-md {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #B6B8C0;
+  margin: 0;
+}
+
+.text-body-sm {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #C2C4CC;
+  margin: 0;
+}
+
+/* ============================================
+   COLOR UTILITIES
+   ============================================ */
+
+.color-accent {
+  color: #6C7BFF;
+}
+
+.color-accent-green {
+  color: #21A038;
+}
+
+.color-accent-cyan {
+  color: #7FE9D6;
+}
+
+.color-text-neutral {
+  color: #C2C4CC;
+}
+
+/* ============================================
+   ICONS
+   ============================================ */
+
+.icon-sm {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тотоева Алина — Дизайнер интерфейсов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:#08090C;color:#F4F5F7;-webkit-font-smoothing:antialiased;}
+  ::selection{background:#6C7BFF;color:#fff;}
+  @keyframes marqA{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes revUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(0,-26px)}}
+  [data-rev]{animation:revUp .8s cubic-bezier(.2,.7,.2,1) both;}
+  .lk{transition:color .18s,opacity .18s;cursor:pointer;}
+  .lk:hover{opacity:.62;}
+  .undl{position:relative;}
+  .undl:after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:#6C7BFF;transition:width .25s cubic-bezier(.2,.7,.2,1);}
+  .undl:hover:after{width:100%;}
+  .gcard{transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s,background .25s;}
+  .gcard:hover{transform:translateY(-6px);border-color:rgba(108,123,255,0.5)!important;box-shadow:0 28px 60px -26px rgba(108,123,255,.45);}
+  .tcard{transition:transform .2s cubic-bezier(.2,.7,.2,1);}
+  .tcard:hover{transform:translateY(-4px);}
+  .pill{transition:background .18s,transform .18s,box-shadow .25s;cursor:pointer;}
+  .pill:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px rgba(108,123,255,.6);}
+  .filter-btn{border:none;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;font-weight:700;font-size:14px;padding:9px 18px;border-radius:24px;transition:all .22s;}
+  a{text-decoration:none;color:inherit;}
+</style>
+</head>
+<body>
+
+<div style="position:relative;min-height:100vh;background:#08090C;color:#F4F5F7;font-family:'Hanken Grotesk',system-ui,sans-serif;overflow:hidden;">
+
+  <!-- ambient glow blobs -->
+  <div style="position:absolute;top:-160px;left:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.40),transparent 66%);filter:blur(36px);pointer-events:none;animation:floatB 14s ease-in-out infinite;"></div>
+  <div style="position:absolute;top:520px;right:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(60,224,200,0.18),transparent 66%);filter:blur(40px);pointer-events:none;animation:floatB 18s ease-in-out infinite reverse;"></div>
+  <div style="position:absolute;top:1500px;left:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.26),transparent 66%);filter:blur(40px);pointer-events:none;"></div>
+
+  <div style="position:relative;z-index:2;">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:80;background:rgba(10,11,15,0.55);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <div style="display:flex;align-items:center;gap:11px;">
+        <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:16px;letter-spacing:-0.01em;">Тотоева Алина</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href="#" class="lk" style="display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:600;color:#C9CBD2;">Резюме
+          <span style="width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.16);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px;">↓</span>
+        </a>
+        <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:8px;background:#6C7BFF;color:#fff;font-weight:700;font-size:14.5px;padding:10px 18px;border-radius:30px;box-shadow:0 0 0 1px rgba(255,255,255,0.06) inset;">@alinO43</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="max-width:1180px;margin:0 auto;padding:70px 28px 34px;">
+
+    <div style="display:grid;grid-template-columns:1.32fr 0.68fr;gap:44px;align-items:end;">
+      <div>
+        <div data-rev style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
+          <span style="display:inline-flex;align-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EDEEF2;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);padding:11px 20px;border-radius:30px;">UX/UI</span>
+          <span style="display:inline-flex;align-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EDEEF2;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);padding:11px 20px;border-radius:30px;">Product Design</span>
+          <span style="display:inline-flex;align-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EDEEF2;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);padding:11px 20px;border-radius:30px;">Web Design</span>
+          <span style="display:inline-flex;align-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EDEEF2;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);padding:11px 20px;border-radius:30px;">UX Research</span>
+          <span style="display:inline-flex;align-items:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EDEEF2;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);padding:11px 20px;border-radius:30px;">Prompt Engineer</span>
+        </div>
+        <h1 data-rev style="font-family:'Archivo',sans-serif;font-weight:900;font-size:102px;line-height:0.9;letter-spacing:-0.045em;margin:0;">
+          Дизайн<br>интерфейсов,<br>в котором есть <span style="color:#6C7BFF;text-shadow:0 0 36px rgba(108,123,255,0.55);">смысл</span>
+        </h1>
+        <div style="max-width:560px;">
+          <p data-rev style="font-size:19px;line-height:1.55;color:#A7A9B2;margin:30px 0 0;">
+            Привет! Я — Алина, дизайнер интерфейсов. Проектирую адаптивы под мобильные приложения и веб. А ещё обожаю участвовать в дизайн-ивентах и учиться новому.
+          </p>
+        </div>
+        <div data-rev style="display:flex;align-items:center;gap:14px;margin-top:34px;flex-wrap:wrap;">
+          <a href="#projects" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:#6C7BFF;color:#fff;font-weight:700;font-size:16px;padding:15px 28px;border-radius:32px;">Смотреть работы <span style="font-size:15px;">↓</span></a>
+          <a href="#" class="lk undl" style="font-weight:700;font-size:16px;padding:15px 6px;color:#F4F5F7;">Скачать резюме →</a>
+        </div>
+      </div>
+
+      <div data-rev class="relative">
+        <div style="position:relative;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(20px);border-radius:30px;padding:14px;">
+          <img src="https://alino43.github.io/portfolio/images/home/hero-avatar.png" alt="Алина Тотоева" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px;">
+        </div>
+        <div style="position:absolute;left:-18px;bottom:22px;background:rgba(16,17,22,0.7);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(18px);color:#fff;border-radius:18px;padding:13px 17px;box-shadow:0 16px 40px -14px rgba(0,0,0,.7);">
+          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;line-height:1;">5<span class="color-accent">+</span></div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.62);margin-top:3px;">проектов в портфолио</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- PROJECTS -->
+  <div id="projects" style="max-width:1180px;margin:0 auto;padding:78px 28px 0;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px;">
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:54px;line-height:0.96;letter-spacing:-0.03em;margin:0;">Кейсы проектов</h2>
+      <div style="display:inline-flex;gap:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(16px);border-radius:30px;padding:5px;">
+        <button class="filter-btn" data-filter="ux" onclick="setFilter('ux')">UX/UI</button>
+        <button class="filter-btn" data-filter="ai" onclick="setFilter('ai')">AI-проекты</button>
+        <button class="filter-btn" data-filter="br" onclick="setFilter('br')">Брендинг</button>
+      </div>
+    </div>
+
+    <!-- project cards -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+
+      <a id="card-company" data-cat="ux" href="company-profile-case.html" class="project-card gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(18px);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;color:inherit;">
+        <div style="position:relative;padding:14px 14px 0;flex-shrink:0;">
+          <img src="https://alino43.github.io/portfolio/images/company-profile/hero-cover.png" alt="Company Profile" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;">
+          <span style="position:absolute;top:26px;left:26px;display:inline-flex;align-items:center;gap:7px;background:rgba(16,17,22,0.72);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;">Сбер · 01–06.2026</span>
+        </div>
+        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:27px;line-height:1;letter-spacing:-0.02em;margin:0 0 12px;">Company Profile</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#A7A9B2;margin:0 0 16px;flex:1;">Редизайн платформы для проверки компаний и контрагентов. Обновила дизайн-систему, спроектировала экраны и собрала адаптивные версии интерфейса.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="tag-light-xxs">Дизайн-система</span>
+            <span class="tag-light-xxs">Web</span>
+            <span class="tag-light-xxs">Адаптив</span>
+          </div>
+        </div>
+      </a>
+
+      <a id="card-autobrief" data-cat="ux" href="autobrief-case.html" class="project-card gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(18px);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;color:inherit;">
+        <div style="position:relative;padding:14px 14px 0;flex-shrink:0;">
+          <img src="https://alino43.github.io/portfolio/images/figma-473/hero-cover.png" alt="AutoBrief" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;">
+          <span style="position:absolute;top:26px;left:26px;display:inline-flex;align-items:center;gap:7px;background:rgba(16,17,22,0.72);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;">Стартап · 2025–2026</span>
+        </div>
+        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:27px;line-height:1;letter-spacing:-0.02em;margin:0 0 12px;">Autobrief</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#A7A9B2;margin:0 0 16px;flex:1;">Дизайн B2B-платформы для конспектирования и summary онлайн-встреч с AI-помощником. От идеи и исследования до готовых экранов продукта.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="tag-light-xxs">B2B</span>
+            <span class="tag-light-xxs">AI</span>
+            <span class="tag-light-xxs">Продукт</span>
+          </div>
+        </div>
+      </a>
+
+      <a id="card-lms" data-cat="ux" href="lms-itam-case.html" class="project-card gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(18px);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;color:inherit;">
+        <div style="position:relative;padding:14px 14px 0;flex-shrink:0;">
+          <span style="position:absolute;top:26px;left:26px;display:inline-flex;align-items:center;gap:7px;background:rgba(16,17,22,0.72);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;z-index:1;">МИСИС · 2025–2026</span>
+          <img src="https://alino43.github.io/portfolio/assets/hero-cover.png" alt="LMS ITAM" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;">
+        </div>
+        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:27px;line-height:1;letter-spacing:-0.02em;margin:0 0 12px;">LMS ITAM</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#A7A9B2;margin:0 0 16px;flex:1;">LMS-система для студентов Университета МИСИС: путь обучения, личный кабинет и интерфейс курсов.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="tag-light-xxs">UX Research</span>
+            <span class="tag-light-xxs">EdTech</span>
+          </div>
+        </div>
+      </a>
+
+      <a id="card-landing" data-cat="ux" href="landing-case.html" class="project-card gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(18px);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;color:inherit;">
+        <div style="position:relative;padding:14px 14px 0;flex-shrink:0;">
+          <img src="screens/landing/hero-cover.png" alt="Find Analytics" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;">
+          <span style="position:absolute;top:26px;left:26px;display:inline-flex;align-items:center;gap:7px;background:rgba(16,17,22,0.72);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;">Сервис · 2025</span>
+        </div>
+        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+          <h3 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:27px;line-height:1;letter-spacing:-0.02em;margin:0 0 12px;">Find Analytics</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#A7A9B2;margin:0 0 16px;flex:1;">Лэндинг сервиса защиты данных: бренд-направление, крупная типографика и понятная структура под конверсию.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="tag-light-xxs">Landing</span>
+            <span class="tag-light-xxs">Брендинг</span>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <div style="max-width:1180px;margin:0 auto;padding:78px 28px 0;">
+    <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:46px;line-height:1;letter-spacing:-0.03em;margin:0 0 26px;">Мой стэк</h2>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px;">
+        <span style="width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/images/home/stack-claude.png" alt="Claude" class="icon-sm"></span>
+        <span style="font-weight:700;font-size:15.5px;">Claude Design</span>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px;">
+        <span style="width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/images/home/stack-figma.png" alt="Figma" class="icon-sm"></span>
+        <span style="font-weight:700;font-size:15.5px;">Figma</span>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px;">
+        <span style="width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/images/home/stack-cursor.png" alt="Cursor" class="icon-sm"></span>
+        <span style="font-weight:700;font-size:15.5px;">Cursor</span>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px;">
+        <span style="width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/images/home/stack-framer.png" alt="Framer" class="icon-sm"></span>
+        <span style="font-weight:700;font-size:15.5px;">Framer</span>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px;">
+        <span style="width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/images/home/stack-illustrator.png" alt="Adobe Illustrator" class="icon-sm"></span>
+        <span style="font-weight:700;font-size:15.5px;">Illustrator</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div style="max-width:1180px;margin:0 auto;padding:78px 28px 0;">
+    <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:46px;line-height:1;letter-spacing:-0.03em;margin:0 0 30px;">Мой опыт</h2>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:auto 200px 1fr;gap:26px;align-items:flex-start;">
+        <span style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/icon/experience/sber.png" alt="Сбер" style="width:36px;height:36px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;">Сбер</div><div style="font-size:13.5px;color:#8A8D96;font-weight:600;margin-top:7px;">01.2026 — 06.2026</div></div>
+        <p style="font-size:15px;line-height:1.55;color:#A7A9B2;margin:0;">Enterprise & SaaS. Редизайн платформы для проверки компаний. Управляла дизайн-системой, планировала спринты с разработкой, согласовывала требования со stakeholders, проектировала экраны и адаптивные версии с учётом масштабируемости.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:auto 200px 1fr;gap:26px;align-items:flex-start;">
+        <span style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/icon/experience/component.png" alt="Компонент" style="width:36px;height:36px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;">Компонент</div><div style="font-size:13.5px;color:#8A8D96;font-weight:600;margin-top:7px;">09.2025 — 01.2026</div></div>
+        <p style="font-size:15px;line-height:1.55;color:#A7A9B2;margin:0;">Agency. Вела 5+ проектов для разных клиентов. Управляла сроками, координировала feedback клиентов, быстро адаптировалась к их требованиям, проектировала сложные системы с учётом целей бизнеса.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:auto 200px 1fr;gap:26px;align-items:flex-start;">
+        <span style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/icon/experience/autobrief.png" alt="AutoBrief" style="width:36px;height:36px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;">AutoBrief</div><div style="font-size:13.5px;color:#8A8D96;font-weight:600;margin-top:7px;">04.2025 — 08.2025</div></div>
+        <p style="font-size:15px;line-height:1.55;color:#A7A9B2;margin:0;">Стартап. B2B-сервис для редактирования встреч с AI. Вела полный цикл от идеи до launch, проводила юзер-тестирования, принимала решения по приоритизации фич, работала в agile с быстрой итерацией.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:auto 200px 1fr;gap:26px;align-items:flex-start;">
+        <span style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/icon/experience/moremania.png" alt="Моремания" style="width:36px;height:36px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;">Моремания</div><div style="font-size:13.5px;color:#8A8D96;font-weight:600;margin-top:7px;">06.2024 — 03.2025</div></div>
+        <p style="font-size:15px;line-height:1.55;color:#A7A9B2;margin:0;">B2C. 3+ продукта одновременно. Совмещала роли дизайнера и PM: проводила аналитику, планировала features, координировала разработку, анализировала метрики, оптимизировала конверсию на основе данных.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:auto 200px 1fr;gap:26px;align-items:flex-start;">
+        <span style="width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://alino43.github.io/portfolio/icon/experience/tech-boss.png" alt="Тех-Босс" style="width:36px;height:36px;object-fit:contain;"></span>
+        <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;">Тех-Босс</div><div style="font-size:13.5px;color:#8A8D96;font-weight:600;margin-top:7px;">12.2022 — 06.2024</div></div>
+        <p style="font-size:15px;line-height:1.55;color:#A7A9B2;margin:0;">RetailTech. 4+ сложных приложения (бронирование, кассы, терминалы). Управляла дизайн-системой, работала с hardware constraints, тестировала на реальных пользователях, документировала процессы для тима.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div style="max-width:1180px;margin:0 auto;padding:78px 28px 0;">
+    <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:46px;line-height:1;letter-spacing:-0.03em;margin:0 0 28px;">Обо мне</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:16px;">
+        <img src="https://alino43.github.io/portfolio/images/home/about-courses.png" alt="Веду курсы" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;">
+        <h3 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;margin:18px 4px 8px;">Веду курсы</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:#A7A9B2;margin:0 4px 6px;">Студенческие курсы по UX/UI и Figma на платформе, которую мы разработали специально под обучение.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:16px;">
+        <img src="https://alino43.github.io/portfolio/images/home/about-hackathons.png" alt="Хакатоны" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;">
+        <h3 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;margin:18px 4px 8px;">Участвую в хакатонах</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:#A7A9B2;margin:0 4px 6px;">Люблю участвовать и побеждать в продуктовых и дизайнерских хакатонах.</p>
+      </div>
+      <div class="gcard" style="background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(16px);border-radius:22px;padding:16px;">
+        <img src="https://alino43.github.io/portfolio/images/home/about-meetups.png" alt="Митапы" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;">
+        <h3 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;margin:18px 4px 8px;">Организую дизайн-ивенты</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:#A7A9B2;margin:0 4px 6px;">Сама занимаюсь организацией митапов, хакатонов и дизайн-ивентов.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER CTA -->
+  <div style="max-width:1180px;margin:78px auto 0;padding:0 28px 80px;">
+    <div style="position:relative;overflow:hidden;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(24px) saturate(140%);border-radius:30px;padding:64px 48px;text-align:center;box-shadow:0 30px 80px -34px rgba(0,0,0,0.7);">
+      <div style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:480px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(108,123,255,0.45),transparent 66%);filter:blur(30px);pointer-events:none;"></div>
+      <div class="relative">
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:60px;line-height:0.98;letter-spacing:-0.035em;margin:0 0 14px;">Давай сделаем<br>что-то <span style="color:#6C7BFF;text-shadow:0 0 36px rgba(108,123,255,0.6);">классное</span></h2>
+        <div style="max-width:480px;margin:0 auto;">
+          <p style="font-size:17px;color:#A7A9B2;margin:0 0 30px;line-height:1.55;">Открыта к проектам, коллабам и дизайн-ивентам. Напиши — обсудим.</p>
+        </div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://t.me/alinO43" target="_blank" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:#6C7BFF;color:#fff;font-weight:700;font-size:16px;padding:15px 30px;border-radius:32px;">Telegram · @alinO43</a>
+          <a href="#" class="pill" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);color:#F4F5F7;font-weight:700;font-size:16px;padding:15px 30px;border-radius:32px;">Скачать резюме ↓</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px;color:#6B6F76;font-size:13.5px;">
+      <span style="display:inline-flex;align-items:center;gap:9px;">© Алина Тотоева · 2026</span>
+      <span>Дизайнер интерфейсов · UX/UI · Product</span>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<script>
+  // category map: cp=ux, ab=ai, lms=ux, land=br, mm=ux, itam=ux
+  // but original dc script shows all ux cats for all filters initially
+  // Re-read: catOf = { cp:'ux', ab:'ai', lms:'ux', land:'br', mm:'ux', itam:'ux' }
+  // Cards: company-profile=ux, autobrief=ai, lms=ux, landing=br, moremania=ux, itam=ux
+
+  let currentFilter = 'ux';
+
+  function setFilter(f) {
+    currentFilter = f;
+    const cards = document.querySelectorAll('.project-card');
+    cards.forEach(card => {
+      const cat = card.getAttribute('data-cat');
+      card.style.display = (f === 'all' || cat === f) ? 'flex' : 'none';
+      card.style.flexDirection = 'column';
+    });
+
+    const btns = document.querySelectorAll('.filter-btn');
+    btns.forEach(btn => {
+      const isActive = btn.getAttribute('data-filter') === f;
+      btn.style.background = isActive ? '#6C7BFF' : 'transparent';
+      btn.style.color = isActive ? '#ffffff' : '#A7A9B2';
+    });
+  }
+
+  // init
+  setFilter('ux');
+</script>
+</body>
+</html>
